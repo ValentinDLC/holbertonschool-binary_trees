@@ -16,6 +16,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 		return (NULL);
 	}
 
+	/* Initialize the node's value and pointers */
 	new_node->n = value;
 	new_node->parent = parent;
 	new_node->left = NULL;
