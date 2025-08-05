@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-
 /**
  * binary_tree_insert_right - Inserts a node as the right-child of another node
  * @parent: Pointer to the node to insert the right-child in
@@ -24,8 +23,7 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 	new_node->n = value;
 	new_node->parent = parent;
 	new_node->left = NULL;
-	/*We reapeat the same operation as in task 2,this time assigning to the
-	 * former right child*/
+
 	old_right = parent->right;
 	parent->right = new_node;
 	if (old_right)
