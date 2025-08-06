@@ -10,12 +10,12 @@ size_t binary_tree_height(const binary_tree_t *tree)
 size_t left_height, right_height;
 if (tree == NULL)
 {
-return(0);
+return (0);
 }
 /*Check if the node is a leaf*/
 if (tree->left == NULL && tree->right == NULL)
 {
-return(0);
+return (0);
 }
 /*recursively calculate the height of the left subtree and the height of the right subtree*/
 left_height = binary_tree_height(tree->left);
